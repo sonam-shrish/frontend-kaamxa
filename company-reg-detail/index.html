@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>company-reg-details</title>
+	</head>
+	<body>
+		<div class="company-reg-form-container form-container">
+			<h2>Company Registration</h2>
+			<form
+				method="post"
+				action="{% url 'accounts:company_registration' %}"
+				enctype="multipart/form-data"
+			>
+				<div class="form-in">
+					<div class="container-left">
+						<!-- company-name -->
+						<div class="form-group">
+							<label for="c_name">Company Name</label>
+							<input
+								id="c_name"
+								name="company_name"
+								class="form-control"
+								type="text"
+								placeholder="Company Name"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<!-- company-category -->
+							<label for="c_category">Industry</label>
+							<select
+								class="form-control"
+								id="c_category"
+								name="company_category"
+								required
+							>
+								<option value="{{cc.0}}">{{cc.1}}</option>
+								{% endfor %}
+							</select>
+						</div>
+
+						<div class="form-group">
+							<!-- state -->
+							<label for="state">Address</label>
+							<select class="form-control" id="state" name="state" required>
+								{% for state in states %}
+								<option value="{{state.0}}">{{state.1}}</option>
+								{% endfor %}
+							</select>
+						</div>
+
+						<div class="form-group">
+							<!-- city -->
+							<select class="form-control" id="city" name="city" required>
+								<option>Select City</option>
+								{% for city in cities %}
+								<option value="{{city.0}}">{{city.1}}</option>
+								{% endfor %}
+							</select>
+						</div>
+
+						<div class="form-group">
+							<!-- area -->
+							<input
+								class="form-control"
+								type="text"
+								id="area"
+								name="area"
+								placeholder="Enter Area"
+								required
+							/>
+						</div>
+
+						<div class="form-group">
+							<!-- mobile -->
+							<label for="mobile">Mobile</label>
+							{% if user.is_authenticated and '+97798' in user.username %}
+							<input
+								class="form-control"
+								id="mobile"
+								type="tel"
+								name="mobile"
+								value="{{user.username}}"
+								required
+							/>
+							{% else %}
+							<input
+								class="form-control"
+								id="mobile"
+								type="tel"
+								name="mobilel"
+								value="+977"
+								required
+							/>
+							{% endif %}
+						</div>
+						<!-- contact -->
+						<label for="contact">Contact</label>
+						{% if user.is_authenticated and '+97701' in user.username %}
+						<input
+							class="form-control"
+							id="contact"
+							type="tel"
+							name="contact"
+							value="{{user.username}}"
+							required
+						/>
+						{% else %}
+						<input
+							class="form-control"
+							id="contact"
+							type="tel"
+							name="contact"
+							value="+977"
+							required
+						/>
+						{% endif %}
+					</div>
+					<div class="container-right">
+						<div class="form-group">
+							<!-- email -->
+							<label for="email">Email</label>
+							{% if user.is_authenticated and '@' in user.username %}
+							<input
+								class="form-control"
+								id="email"
+								type="email"
+								name="email"
+								value="{{user.username}}"
+								required
+							/>
+							{% else %}
+							<input
+								class="form-control"
+								id="email"
+								type="email"
+								name="email"
+								required
+							/>
+							{% endif %}
+						</div>
+
+						<div class="form-group">
+							<!-- company-website -->
+							<label for="website">Website</label>
+							<input
+								class="form-control"
+								id="website"
+								type="url"
+								name="website"
+							/>
+						</div>
+						<div class="form-group">
+							<!-- company-logo -->
+							<label for="c_logo" id="file-input">Company Logo</label>
+							<input type="file" name="c_logo" id="c_logo" /><br />
+						</div>
+						<div class="form-group">
+							<!-- company-details -->
+							<label for="c_details">Company Details</label>
+							<textarea
+								class="form-control"
+								id="c_details"
+								name="c_details"
+								rows="5"
+								required
+							></textarea
+							><br />
+						</div>
+
+						<button type="submit" class="btn btn-block">SUBMIT</button>
+					</div>
+				</div>
+			</form>
+			{% endblock content %}
+		</div>
+	</body>
+</html>

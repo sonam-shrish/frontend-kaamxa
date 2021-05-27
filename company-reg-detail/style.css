@@ -1,0 +1,21 @@
+.form-container {
+	max-width: 480px;
+	padding: 50px 50px;
+	background-color: var(--bg-prim);
+	border-radius: 20px;
+	margin: 100px;
+	margin: 10px auto;
+}
+@media screen and (max-width: 480px) {
+	.company-reg-form-container {
+		max-width: 480px;
+		background-color: var(--bg-prim);
+		padding: 50px;
+		border-radius: 50px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.company-reg-form-container {
+		min-width: 760px;
+	}
+}

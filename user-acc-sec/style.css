@@ -1,0 +1,29 @@
+.sec-user-account-registration-container {
+	padding: 50px 50px;
+	background-color: var(--bg-prim);
+	border-radius: 20px;
+	margin: 100px;
+}
+@media only screen and (max-width: 480px) {
+	.sec-user-account-registration-container {
+		max-width: 450px;
+		margin: 10px;
+		padding: 20px;
+	}
+	.form-in {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	.form-in {
+		display: flex;
+		justify-content: space-between;
+	}
+	.container-left {
+		width: 45%;
+	}
+	.container-right {
+		width: 45%;
+	}
+}

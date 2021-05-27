@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>Profile Registration</title>
+	</head>
+	<body><div class=" sec-user-account-registration-container">
+		<h2>Profile Registration</h2>
+		{% extends 'base.html' %}
+	{% block title %}Account Registration
+	{% endblock title %}
+	{% block content %}
+		<form method='post' action='{% url 'accounts:user-account-registration' %}'>
+		{% csrf_token %}
+		<div class="form-in">
+		<div class="container-left">
+				<!--full name-->
+				<div class="form-group">
+					<label for="f_name">Full Name</label>
+				<input class='form-control' id="f_name" type="text" name="full_name" placeholder="Full Name">
+				</div>
+				
+				<!--Date of Birth-->
+				<div class="form-group">
+					<label for="dob">Date of Birth</label>
+				<input class='form-control' id="dob" type="date" name="dob" placeholder="Date of Birth">
+		
+				</div>
+				
+				<!-- gender -->
+				<div class="form-group">
+					<label>Gender</label><br>
+
+				<label for="male"> <input id="male" type="radio" name="gender" value="male"> Male</label>
+				<label for="female"><input id="female" type="radio" name="gender" value="female">Female</label>
+				<label for="others"><input id="others" type="radio" name="gender" value="other">Others</label> 
+				<br>    
+		</div>
+				
+		
+				<!--Address-->
+				<div class="form-group">
+					<label for="address">Address</label>
+				<input class='form-control' id="address" type="text" name="address" placeholder="Address">
+				</div>
+				
+				<!--email-->
+				<div class="form-group">
+					<label for="email">Email</label>
+				<input class='form-control' id="email" type="email" name="email" placeholder="Email Address">
+				</div>
+				
+				<!--contact-->
+				<div class="form-group">
+					<label for="contact">Phone</label>
+				<input class='form-control' id="cotact" type="number" name="contact" placeholder="Phone">
+				</div>
+		</div>
+		<div class="container-right">
+			<!--preferred job category-->
+			
+				<div class="form-group">
+					<label for="p_job_category">Preferred Job Category</label>
+				<select class='form-control' id="p_job_category" name='p_job_category'>
+				</div>
+				{% for p in pjc %}
+					<option value= '{{p.0}}'>{{p.1}}</option>
+				{% endfor %}
+				</select>
+				
+				<!--education-->
+				<div class="form-group">
+					<label for="education">Education</label>
+				<textarea class='form-control' rows="4" id="education" name='education'></textarea>
+				</div>
+		
+		
+				<!--experience-->
+				<div class="form-group">
+					<label for="experience">Experience</label>
+				<textarea rows='4' name='experience' class='form-control' id="experience" placeholder="Ex: Worked in Khalti IT Department for 2 years"></textarea>
+				</div>
+				
+				<!--skills-->
+				<div class="form-group">
+					<label for="skills">Other Skills</label>
+				<textarea rows='4' class='form-control' id="skills" name='skills'></textarea>
+				</div>
+		
+				<!--career goals-->
+				<div class="form-group">
+					<label for="career-goals">Career Goals</label>
+				<textarea rows='4' class='form-control' id="career-goals" name='c_goals'></textarea>
+				</div>
+		
+				<button type="submit" class='btn btn-block'>SUBMIT</button>
+		</div>
+	</div>
+		</form>
+	<!-- % endblock content % -->
+	</div>
+	
+
+</body>
+</html>

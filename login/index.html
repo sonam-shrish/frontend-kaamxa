@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>login</title>
+	</head>
+	<body>
+        <div class=" login-container">
+            {% extends 'base.html' %}
+{% block title %}Login{% endblock title %}
+{% block content %}
+            <h2>Login</h2>
+            <form method= 'post' class='form-group' action = {% url 'accounts:account_login' %}>
+                {% csrf_token %}
+                    <div class=" google-signin-container"><center><i class="fab fa-google"></i>Sign in with google</center></div>
+                    <div class="divider">
+                        <div class=" line line-left"></div>
+                        <div class="option">Or Sign In with Email</div>
+                        <div class=" line line-right"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for='emailOrPhone'>Email/Phone</label>
+                    <input type="text" name='username' class="form-control" id="loginEmailInp" aria-describedby="emailHelp" placeholder="Enter email/phone">
+                    </div>
+                    <div class="form-group">
+                        <label for='password'>Password</label>
+                        <input name='password' type="password" class='form-control' placeholder= 'Enter Password'>
+                    </label>
+                    </div>
+                    
+                    <div class="form-group mt-2">
+                        <center>
+                            <button type="submit" class="btn btn-block ">SUBMIT</button>
+    
+                            </center>
+                    </div>
+                    
+                </div>
+                
+                
+
+                
+                
+                </form>
+            
+   
+        
+      
+
+{% endblock content %}
+        </div>
+    </body>
+</html>

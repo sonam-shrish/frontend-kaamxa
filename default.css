@@ -1,0 +1,116 @@
+/* WATCH OUT */
+/* used important in form label, button styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700&display=swap');
+
+:root {
+    --primColor:#38f495;
+    --primColor2: #24cd98;
+    --primColor3: #29a07B;
+    --secColor: #ff0055;
+    --secColor2: #c81350;
+    
+
+
+    --bg-color1: #efefef;
+    --bg-color2: #ffffff;
+    --bg-prim: #b2eedb;
+    --muted1: #9b9b9b
+    --muted2: #504f4b;
+
+    --heading2: 32px;
+    --text: 16px;
+}
+
+* {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    font-style: bold;
+
+}
+
+h3 {
+    font-weight: 300px;
+    font-size: 16px;
+    font-style: bold;
+}
+
+body *{
+	transition: 0.3s;
+}
+
+label {
+    font-weight: normal !important;
+}
+textarea {
+    height: 100px;
+}
+
+button {
+    border: 0 !important;
+    border-radius: 50px !important;
+    background-color: var(--secColor);
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+input,
+select,
+option {
+	border-radius: 50px !important;
+}
+textarea {
+    border-radius: 20px !important;
+}
+
+/* Styling the file input */
+input[type="file"] {
+    display: none;
+}
+.file-input {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#c_logo {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.form-container {
+		max-width: 450px;
+		margin: 10px;
+		padding: 20px;
+	}
+	.form-in {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	.form-in {
+		display: flex;
+		justify-content: space-between;
+	}
+	.container-left {
+		width: 45%;
+	}
+	.container-right {
+		width: 45%;
+	}
+}
