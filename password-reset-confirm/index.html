@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>Change password</title>
+	</head>
+	<body>
+		
+		<div class="card-container small-card">
+			<h2>Change password</h2>
+			<form method="post">
+				<div class="form-group">
+					<label for='password'>Password</label>
+					<input name='password' type="password" class='form-control ' required placeholder= 'Enter Password'>
+				</label>
+				<div class="form-group">
+					<label for='confirm-password'>Password</label>
+					<input name='confirm-password' type="password" class='form-control ' required placeholder= 'Enter Password'>
+				</label><br>
+				<button type="submit" class='button btn-block'>Change password</button>
+			</form>
+			{% else %}
+			<p>
+				The password reset link was invalid, possibly because it has already been
+				used. Please request a new password reset.
+			</p>
+		</div>
+	</body>
+</html>

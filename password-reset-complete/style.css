@@ -1,0 +1,34 @@
+.sign-up-container {
+	max-width: 480px;
+	border-radius: 50px;
+	background-color: var(--bg-prim);
+	padding: 50px;
+	margin: 10px auto;
+}
+
+.google-signin-container {
+	background-color: white;
+	border-radius: 50px;
+	padding: 5px;
+}
+
+.line {
+	width: 30%;
+	height: 1px;
+	background-color: gray;
+}
+
+.divider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+	.sign-up-container {
+		max-width: 480px;
+		background-color: var(--bg-prim);
+		padding: 50px;
+		border-radius: 50px;
+	}
+}

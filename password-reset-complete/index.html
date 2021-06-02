@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../default.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>Individual Employer</title>
+        
+
+	</head>
+	<body>
+        <div class=" form-container card-container">
+    
+    
+        <h2>Individual Employer<h2>
+        <form method='post' action='{% url 'accounts:user-account-registration' %}'>
+        {% csrf_token %}
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+
+                <!--full name-->
+                <div class="form-group">
+                    <label for="f_name">Full Name</label>
+                <input class='form-control' required id="f_name" type="text" name="full_name" placeholder="Full Name">
+                </div>
+                
+                <!--Date of Birth-->
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                <input class='form-control' required id="dob" type="date" name="dob" placeholder="Date of Birth">
+        
+                </div>
+                
+                <!-- gender -->
+                <div class="form-group">
+                    <label>Gender</label><br>
+    
+                <label for="male">Male</label> <input id="male" required type="radio" name="gender" value="male"> 
+                <label for="female">Female</label><input id="female" required type="radio" name="gender" value="female">
+                <label for="others">Others</label> <input id="others" type="radio" name="gender" value="other">
+                <br>    
+                </div>
+                
+        
+                <!--Address-->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                <input class='form-control' required id="address" type="text" name="address" placeholder="Address">
+                </div>
+                
+                <!--email-->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                <input class='form-control' required id="email" type="email" name="email" placeholder="Email Address">
+                </div>
+                
+                <!--contact-->
+                <div class="form-group">
+                    <label for="contact">Phone</label>
+                <input class='form-control' required id="cotact" type="number" name="contact" placeholder="Phone">
+                </div>
+            </div>
+                <!-- Hiring for -->
+    <div class="col col-sm-12 col-md-6 col-lg-6">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Business" id="Business" value="business" checked>
+                    <label class="form-check-label" for="Business">
+                      Business
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="home" id="home" value="home">
+                    <label class="form-check-label" for="home">
+                     Home
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="business" id="business" value="business">
+                    <label class="form-check-label" for="business">
+                      Others
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="business-name">Business Name</label>
+                <input class='form-control' required id="cotact" type="number" name="business-name" placeholder="Business Name">
+                </div>
+                <div class="form-group">
+                    <label for="no-of-employees">Number of Employees</label>
+                <input class='form-control' required id="cotact" type="number" name="contact" placeholder="Number of Employees">
+                </div>
+                <div class="form-group">
+                    <label for="business_type">Business Type</label>
+                <select class='form-control' required id="business_type" name='business_type'>
+                </div>
+                <option value="test">Test</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <textarea class='form-control'  rows="4" id="others" name='others' placeholder="Please specify..."></textarea>
+                </div>
+            </div>
+                
+        
+    <center>
+    
+    <button type="submit" class='button'>SUBMIT</button>
+    
+    </center>
+        </form>
+    </div>
+        
+    </body>
+</html>
