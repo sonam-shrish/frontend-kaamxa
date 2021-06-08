@@ -18,6 +18,9 @@
     --muted1: #9b9b9b
     --muted2: #504f4b;
 
+    --background-grad-1: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%)
+    --background-grad-2:  linear-gradient(315deg, #ffac81 0%, #ff928b 74%)
+
     --heading2: 32px;
     --text: 16px;
     --field-height: 40px;
@@ -26,13 +29,13 @@
 * {
     font-family: 'Mukta', 'Roboto', sans-serif;
     font-size: 18px;
+    box-sizing: border-box !important;
     
 }
 html, body{
 	padding: 0;
-	margin: 0;
+	margin: 50px;
 	scroll-behavior: smooth;
-    box-sizing: border-box;
     
 }
 
@@ -109,6 +112,7 @@ textarea {
 }
 .button {
     height: 45px !important;
+    min-width: 100px;
     border: 0 !important;
     border-radius: 50px !important;
     background-color: var(--secColor);
