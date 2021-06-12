@@ -108,23 +108,11 @@
 	border-bottom-color: #ffffff;
 }
 
-/*Search Bar*/
-
-.search-bar-dem {
-	margin-top: 50px;
-}
-.inner-form {
-	display: flex;
-}
-
-/*Search Bar*/
-.search-form {
-	display: flex;
-	margin-top: 50px;
-	justify-content: space-between;
-}
-
 /*new try popular job list*/
+.upper-row h3 {
+	margin-top: 0;
+}
+
 .pop-job-list {
 	width: 100%;
 	display: grid;
@@ -136,18 +124,16 @@
 	background-color: var(--bg-prim);
 	border-radius: 10px;
 	padding: 20px;
-	width: 500px;
+	width: 400px;
 }
 .pop-job-item > .upper-row {
 	display: grid;
-	grid-template-columns: 2fr 5fr 0.5fr;
+	grid-template-columns: 1fr 2.5fr 1fr;
 	justify-content: start;
 }
-.upper-row h3 {
-	margin-top: 0;
-}
+
 .job-icon {
-	height: 100px;
+	height: 80px;
 	object-fit: cover;
 	border-radius: 50%;
 }
@@ -156,7 +142,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 19px;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -164,7 +150,7 @@
 	display: grid;
 	place-items: center;
 }
-
+/*job-item end*/
 /* testemonials start*/
 *,
 *:after,
@@ -181,7 +167,6 @@
 	-o-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-	cursor: default;
 }
 
 .testim {
@@ -327,6 +312,13 @@
 }
 /*END OF TESTIMONIALS */
 /*Start of category */
+.categories-list {
+	display: grid;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 1rem;
+
+	grid-template-columns: repeat(auto-fit, 200px);
+}
 .category-item {
 	width: 200px;
 	background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
@@ -529,3 +521,70 @@ section {
 	}
 }
 /*END OF SITE FOOTER */
+
+/* New Search Bar */
+
+.searchbox {
+	padding: 10px 76px 10px 40px;
+	border-radius: 50px;
+}
+
+.search-fields * {
+	margin-bottom: 10px;
+}
+
+/* END OF NEW SEARCH BAR */
+.search-fields {
+	background-color: var(--muted1);
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-column-gap: 1rem;
+}
+/* End of Search Fields */
+
+/* Job Item */
+.pop-job-list {
+	display: grid;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 1rem;
+
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(150px, 150px));
+}
+.job-item {
+	background-color: var(--bg-prim);
+	border-radius: 10px;
+	padding: 10px;
+	min-width: 300px;
+	box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+.job-item:hover {
+	box-shadow: none;
+	cursor: pointer;
+	transform: translateY(2px);
+}
+.job-item > .upper-row {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr;
+}
+
+.job-icon {
+	height: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.job-item > .lower-row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 19px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bookmark {
+	display: grid;
+	place-items: center;
+}
+/* Job Item end */
