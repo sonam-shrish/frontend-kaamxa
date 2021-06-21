@@ -37,6 +37,11 @@
 html, body{
 	scroll-behavior: smooth;
     
+
+}
+body {
+    padding: 20px;
+    background-color: #efefef;
 }
 
 
@@ -196,12 +201,12 @@ textarea {
 }
 input {
     outline: 0!;
-    border: 0;
+    border: 1px var(--primColor2) solid !important;
     
 }
 input:hover, input:active {
-    border: 0;
     outline: 0;
+    outline-color: var(--bg-prim);
 }
 input:active, input:focus {
     box-shadow: 4px 8px 20px rgba(200, 20, 80, 0.2) !important;

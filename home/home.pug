@@ -1,0 +1,207 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css")
+link(rel="stylesheet", href="./home.css")
+link(rel="stylesheet", href="../default.css")
+//  jQuery library 
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+//  Latest compiled JavaScript 
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+title Home|
+nav.navbar.navbar-expand-sm.navbar-dark
+  a.navbar-brand(href="#") Kaamxa
+  button.navbar-toggler(data-toggle="collapse", data-target="#navbarMenu")
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbarMenu
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        a.nav-link(href="#") Sign In
+      li.nav-item
+        a.nav-link(href="#") Sign Up
+      li.nav-item
+        a.nav-link(href="#") Post a Job
+//  New Search Bar 
+.searchwrapper
+  .searchbox
+    .search-fields
+      div
+        input.form-control(type="text", placeholder="Job Title...")
+      div
+        input.form-control(type="text", placeholder="Location")
+      div
+        button.button Search
+  //  End of Search Bar 
+  //  END OF SEARCH BAR 
+  .categories
+    h2.categories-title CATEGORIES
+    .categories-list
+      .category-item
+        center
+          img.category-img(src="../images/doctor.svg", alt)
+          div
+            strong Category One
+      .category-item
+        center
+          img.category-img(src="../images/doctor.svg", alt)
+          div
+            strong Category One
+      .category-item
+        center
+          img.category-img(src="../images/doctor.svg", alt)
+          div
+            strong Category One
+      .category-item
+        center
+          img.category-img(src="../images/doctor.svg", alt)
+          div
+            strong Category One
+  .job-carousel
+    h2 POPULAR JOBS
+    .pop-job-list
+      .job-item
+        .upper-row
+          img.job-icon(src="https://stackbybucketprod.s3-ap-southeast-1.amazonaws.com/landingpage/hunter.png", alt)
+          .job-summary
+            h5.job-title Secondary Level and Physics Math Teacher
+            small.Location Koteshwor Kathmandu
+          strong Rs. 30,000
+        .lower-row
+          .bookmark
+            i.fas.fa-star
+          | 
+2 days ago
+
+          button.button-sec Full Time
+      .job-item
+        .upper-row
+          img.job-icon(src="https://stackbybucketprod.s3-ap-southeast-1.amazonaws.com/landingpage/hunter.png", alt)
+          .job-summary
+            h5.job-title Secondary Level and Physics Math Teacher
+            small.Location Koteshwor Kathmandu
+          strong Rs. 30,000
+        .lower-row
+          .bookmark
+            i.fas.fa-star
+          | 
+2 days ago
+
+          button.button-sec Full Time
+      .job-item
+        .upper-row
+          img.job-icon(src="https://stackbybucketprod.s3-ap-southeast-1.amazonaws.com/landingpage/hunter.png", alt)
+          .job-summary
+            h5.job-title Secondary Level and Physics Math Teacher
+            small.Location Koteshwor Kathmandu
+          strong Rs. 30,000
+        .lower-row
+          .bookmark
+            i.fas.fa-star
+          | 
+2 days ago
+
+          button.button-sec Full Time
+  .tutorial
+    button.button HOW TO POST A JOB?
+  .testimonials
+    h2 OUR STORIES
+    .testimonials-list
+      section
+        .top-box
+        img.test-details-img(src="../images/doctor.svg", alt="Picture of Vivian Williams")
+        .bottom-box
+          p.quote.
+            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam? Neque reiciendis nihil ab alias.
+            
+          .test-details
+            center
+              .test-details-name Miraj Dhungana
+              .test-details-address Kaushaltar Kathmandu
+      section
+        .top-box
+        img.test-details-img(src="../images/doctor.svg", alt="Picture of Vivian Williams")
+        .bottom-box
+          p.quote.
+            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam? Neque reiciendis nihil ab alias.
+            
+          .test-details
+            center
+              .test-details-name Miraj Dhungana
+              .test-details-address Kaushaltar Kathmandu
+      section
+        .top-box
+        img.test-details-img(src="../images/doctor.svg", alt="Picture of Vivian Williams")
+        .bottom-box
+          p.quote.
+            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam? Neque reiciendis nihil ab alias.
+            
+          .test-details
+            center
+              .test-details-name Miraj Dhungana
+              .test-details-address Kaushaltar Kathmandu
+  //  Site footer 
+  footer.site-footer
+    .container
+      .row
+        .col-sm-12.col-md-6
+          h6 About
+          p.text-justify.
+            
+            Kaamxa Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam repudiandae nobis cumque doloribus et quos ducimus, sunt explicabo quisquam deleniti eum provident! Dolore rem fugit fuga asperiores ab ducimus?
+            
+        .col-xs-6.col-md-3
+          h6 Categories
+          ul.footer-links
+            li
+              a(href="#") Category1
+            li
+              a(href="#") Category2
+            li
+              a(href="#") Category 3
+            li
+              a(href="#") Category4
+        .col-xs-6.col-md-3
+          h6 Quick Links
+          ul.footer-links
+            li
+              a(href="#") About Us
+            li
+              a(href="#") Contact Us
+            li
+              a(href="#") Contribute
+            li
+              a(href="#") Privacy Policy
+            li
+              a(href="#") Sitemap
+      hr
+    .container
+      .row
+        .col-md-8.col-sm-6.col-xs-12
+          p.copyright-text
+            | 
+Copyright © 2021 All Rights Reserved by
+
+            a(href="#") Kaamxa.com
+            | .
+
+        .col-md-4.col-sm-6.col-xs-12
+          ul.social-icons
+            li
+              a.facebook(href="#")
+                i.fab.fa-facebook
+            li
+              a.twitter(href="#")
+                i.fab.fa-twitter
+            li
+              a.instagram(href="#")
+                i.fab.fa-instagram
+            li
+              a.linkedin(href="#")
+                i.fab.fa-linkedin
+  script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
