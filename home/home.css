@@ -12,49 +12,6 @@
 	font-size: 1.2rem;
 }
 
-/*new try popular job list*/
-.upper-row h3 {
-	margin-top: 0;
-}
-
-.pop-job-list {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1.5rem;
-	margin: 0 auto;
-}
-.pop-job-item {
-	background-color: var(--bg-prim);
-	border-radius: 10px;
-	padding: 20px;
-	width: 400px;
-}
-.pop-job-item > .upper-row {
-	display: grid;
-	grid-template-columns: 1fr 2.5fr 1fr;
-	justify-content: start;
-}
-
-.job-icon {
-	height: 80px;
-	object-fit: cover;
-	border-radius: 50%;
-}
-
-.pop-job-item > .lower-row {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 19px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.bookmark {
-	display: grid;
-	place-items: center;
-}
-/*job-item end*/
 /* testemonials start*/
 *,
 *:after,
