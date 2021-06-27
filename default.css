@@ -18,6 +18,7 @@
     --muted1: #9b9b9b
     --muted2: #504f4b;
      
+    --main-background: #efefef
 
     --background-grad-1:linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
     --background-grad-2:  linear-gradient(315deg, #ffac81 0%, #ff928b 74%)
@@ -41,7 +42,9 @@ html, body{
 }
 body {
     padding: 20px;
-    background-color: #efefef;
+    max-width: 1350px;
+    background-color: var(--main-background);
+    margin: auto;
 }
 
 
@@ -75,15 +78,18 @@ textarea {
 
 
 
-input,
 select,
 option {
 	border-radius: 50px !important;
 
+
 }
+/* //INPUT FIELD  */
 input {
     font-size: 18px !important;
     height: var(--field-height) !important;
+	border-radius: 50px !important;
+
 
 }
 
@@ -171,10 +177,9 @@ textarea {
     /* color: var(--muted1); */
 }
 .button {
-    height: 45px !important;
+    height: var(--field-height) !important;
     min-width: 100px;
     max-width: auto;
-    padding: 10px;
     border: 0 !important;
     border-radius: 50px !important;
     background-color: var(--secColor);
@@ -184,8 +189,11 @@ textarea {
 
     
 }
+
+
 .button:hover {
 	transform: translateY(2px);
+    cursor: pointer;
 
 }
 .button-sec {
@@ -224,3 +232,29 @@ nav {
 }
 
 /* END OF NAVBAR */
+
+/* SEARCH BAR */
+
+.searchbox {
+	padding: 10px 76px 10px 40px;
+	border-radius: 50px;
+}
+.search-fields {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: var(--muted1);
+}
+.search-fields > div {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.search-fields #title-input {
+	width: 400px;
+}
+.search-fields #location-input {
+	width: 250px;
+}
+
+/* END OF SEARCH BAR */

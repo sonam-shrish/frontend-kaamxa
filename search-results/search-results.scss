@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap');
+:root {
+	--muted-text: #504f4b;
+	--muted-text2: #9b9b9b;
+	--primColor2: #24cd98;
+	--coolColor1: #efefef;
+}
+* {
+	font-family: 'Mukta', sans-serif;
+}
+
+// Start of Global Styles
+.muted-text {
+	color: var(--muted-text);
+}
+.muted-text2 {
+	color: var(--muted-text2);
+}
+// End of global styles
+
+.results-container {
+	background-color: var(--coolColor1);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+
+.card-container {
+	max-width: 300px;
+	min-width: 280px;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+	.row1,
+	.row2 {
+		margin-bottom: 5px;
+	}
+
+	.row1 {
+		display: flex;
+		justify-content: space-between;
+
+		img.card-img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+		.bookmark {
+			font-size: 2rem;
+			color: crimson;
+		}
+	}
+	.row2 {
+		.company-name,
+		company-location {
+			line-height: 0.9;
+		}
+
+		p {
+			line-height: 0.99;
+		}
+	}
+	.row3 {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		div {
+			padding: 2px 5px;
+			width: 80px;
+			border-radius: 30px;
+			font-size: 0.9rem;
+			background-color: var(--coolColor1);
+		}
+	}
+	.row4 {
+		display: flex;
+		justify-content: space-between;
+		button {
+			outline: 0;
+			border-radius: 50px;
+			border: 0;
+			padding: 3px 15px;
+			font-size: 1.1rem;
+		}
+		.apply {
+			background-color: var(--primColor2);
+			color: white;
+		}
+		.apply:hover,
+		.info:hover {
+			cursor: pointer;
+			transform: scale(1.01);
+			transition: transform 0.2s linear;
+		}
+	}
+}
+.card-container:hover {
+	transform: scale(1.01, 1.01);
+	transition: transform 0.2s linear;
+	background-color: #b2eedb;
+	cursor: pointer;
+	background-color: white;
+	box-shadow: 2px 4px 21px 0px rgba(0, 0, 0, 0.61);
+	-webkit-box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.61);
+	-moz-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.61);
+}

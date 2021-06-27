@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Results</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="../default.css">
+	<link rel="stylesheet" href="./search-results.css" />
+  
+
+	</head>
+
+	<body>
+    <main class='search-results-main'>
+      <!-- SECTION LEFT -->
+      
+      <!--  SEARCH FILTER -->
+      
+      <section class='section-left filters-and-job-alert'>
+      <section class='search-filter'>
+        <div class='card-title'>
+          <h3>Filter Results</h3>
+        </div>
+        <div class='card'>
+          <div class='card-body'>
+          <div class='card-text'>
+          <form action="">
+      
+                <div class="filter-cat">
+                  <strong>Minimum Salary</strong>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Job Location"
+                    />
+                  </div>
+                </div>
+      
+                <div class="filter-cat">
+                  <strong>Location</strong>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Job Title"
+                    />
+                  </div>
+                </div>
+                <div class="filter-cat">
+                  <strong>Minimum Experience</strong>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Job Title"
+                    />
+                  </div>
+                </div>
+                <div class="filter-cat">
+                  <strong>Job Type</strong>
+      
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Part Time
+                    </label>
+                  </div>
+      
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Part Time
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Internship
+                    </label>
+                  </div>
+                  
+                </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <!--   END OF SEARCH FILTER -->
+        <section class='job-alert'>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">Let jobs find you!
+      </h5>
+          <p class="card-text">Create a Job Alert and never miss a new job post.
+      
+      </p>
+          <label for="inputEmail">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          
+            <button type="submit" class="btn mt-2 button btn-primary btn-block">Create Job Alert</button>
+      
+      </div>
+      </section>
+      </section>
+      <!-- END OF SECTION LEFT -->
+
+      <!-- START OF SECTION RIGHT -->
+      		<!-- SEARCH BAR -->
+		<div class="searchwrapper">
+			<div class="searchbox">
+				<div class="search-fields">
+					<div>
+						<input
+						id='title-input'
+							type="text"
+							class="form-control"
+							placeholder="Job Title..."
+						/>
+					</div>
+					<div>
+						<input id='location-input' type="text" class="form-control" placeholder="Location" />
+					</div>
+				
+					<div ><button class="button">Search</button></div>
+			</div>
+		</div>
+
+
+		<!-- END OF SEARCH BAR -->
+      <section class='section-right search-results'>
+        <div class="results-head">
+          <h3 class="number-of-results">120 jobs found</h3>
+          <div class="results-sort">
+            <span>Sort by:</span> <select>
+              <option value="Date">Date</option>
+              <option value='popularity'>popularity</option>
+            </select>
+          </div>
+        </div>
+        <div class="results-container">
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+          <div class="result-card-container">
+            <div class="row1">
+              <img
+                class="card-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3icwVz064vy5N7FcSCHlDn6wdBLe3hPYeCg&amp;usqp=CAU"
+              />
+              <div class="fas fa-heart bookmark"></div>
+            </div>
+            <div class="row2">
+              <strong>Job Title</strong>
+              <div class="muted-text1 company-name">Company Name</div>
+              <div class="muted-text2 company-location">Location</div>
+              <p class="job-desc muted-text">
+                Hello, I need an employee, i need anHello, I need an employee, i
+                need an employeeHello, I need an employee, i need an
+              </p>
+            </div>
+            <div class="row3">
+              <div class='time'>
+                <center>Full Time</center>
+              </div>
+              <div  class='salary'>
+                <center><strong>Rs. 100,000/mo</strong></center>
+              </div>
+            </div>
+            <div class="row4">
+              <button class="apply">Apply Now</button>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+
+
+
+        </div>
+          
+      </section>
+      <!--   SECTION RIGHT -->
+        
+      <!--   END OF SECTION RIGHT -->
+        
+        
+      </main>
+
+
+		<!-- RESULTS STARTS HERE -->
+	
+	</body>
+</html>

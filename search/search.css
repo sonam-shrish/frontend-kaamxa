@@ -1,11 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-/* .search-filter {
-	background-color: var(--bg-prim);
-} */
-
 .job-item {
 	background-color: var(--bg-prim);
 	border-radius: 10px;

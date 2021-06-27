@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap');
+:root {
+	--muted-text: #504f4b;
+	--muted-text2: #9b9b9b;
+	--primColor2: #24cd98;
+	--coolColor1: #efefef;
+}
+
+* {
+	font-family: 'Mukta', sans-serif;
+}
+
+.muted-text {
+	color: var(--muted-text);
+}
+
+.muted-text2 {
+	color: var(--muted-text2);
+}
+
+/*# sourceMappingURL=search-results.css.map */
+
+/* CUSTOM CSS */
+
+/* //CSS IN THE DEFAULT.CSS  */
+:root {
+	--secColor: #ff0055;
+	--field-height: 40px;
+}
+
+input {
+	font-size: 18px !important;
+	/*     height: var(--field-height) !important; */
+	border-radius: 50px !important;
+}
+
+.button {
+	height: var(--field-height) !important;
+	min-width: 100px;
+	max-width: auto;
+	/*     padding: 10px; */
+	border: 0 !important;
+	border-radius: 50px !important;
+	background-color: var(--secColor) !important;
+	color: white !important;
+	box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* START OF MAIN CONTAINER */
+.search-results-main {
+	display: flex;
+}
+/* START OF LEFT COLUMN */
+.search-results-main > .section-left {
+	max-width: 380px;
+	min-width: 310px;
+	padding: 10px;
+}
+.search-filter {
+	margin-bottom: 10px;
+}
+
+.job-alert {
+	margin-bottom: 10px;
+}
+/* END OF LEFT COLUMN */
+
+/*   START OF RIGHT COLUMN */
+
+/* SEARCH BAR  in default.css*/
+
+/* START OF SEARCH RESULTS HEAD */
+.results-head {
+	display: flex;
+	justify-content: space-between;
+}
+/* END OF SEARCH RESULTS HEAD */
+
+.results-container {
+	background-color: var(--coolColor1);
+	display: grid;
+	gap: 0.5rem;
+
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	padding: 10px;
+}
+
+.result-card-container {
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.result-card-container .row1,
+.result-card-container .row2 {
+	margin-bottom: 5px;
+}
+
+.result-card-container .row1 {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.result-card-container .row1 img.card-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.result-card-container .row1 .bookmark {
+	font-size: 2rem;
+	color: crimson;
+}
+
+.result-card-container .row2 .company-name,
+.result-card-container .row2 company-location {
+	line-height: 0.9;
+}
+
+.result-card-container .row2 p {
+	line-height: 0.99;
+}
+
+.result-card-container .row3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.result-card-container .row3 div {
+	padding: 2px 5px;
+	min-width: 150px;
+	border-radius: 30px;
+	font-size: 0.9rem;
+	background-color: var(--coolColor1);
+}
+.result-card-container .row3 > .time {
+	min-width: 90px;
+	max-width: 120px;
+}
+
+.result-card-container .row4 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.result-card-container .row4 button {
+	outline: 0;
+	border-radius: 50px;
+	border: 0;
+	padding: 3px 15px;
+	font-size: 1.1rem;
+}
+
+.result-card-container .row4 .apply {
+	background-color: var(--primColor2);
+	color: white;
+}
+
+.result-card-container .row4 .apply:hover,
+.result-card-container .row4 .info:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: -webkit-transform 0.2s linear;
+	transition: transform 0.2s linear;
+	transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.result-card-container:hover {
+	-webkit-transform: scale(1.01, 1.01);
+	transform: scale(1.01, 1.01);
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: -webkit-transform 0.2s linear;
+	transition: transform 0.2s linear;
+	transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+	background-color: #b2eedb;
+	cursor: pointer;
+	background-color: white;
+	box-shadow: 2px 4px 21px 0px rgba(0, 0, 0, 0.61);
+	-webkit-box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.61);
+	-moz-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.61);
+}
+/*   END OF RIGHT COLUMN */

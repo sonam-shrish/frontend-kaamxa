@@ -433,26 +433,6 @@ section {
 }
 /*END OF SITE FOOTER */
 
-/* New Search Bar */
-
-.searchbox {
-	padding: 10px 76px 10px 40px;
-	border-radius: 50px;
-}
-
-.search-fields * {
-	margin-bottom: 10px;
-}
-
-/* END OF NEW SEARCH BAR */
-.search-fields {
-	background-color: var(--muted1);
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	grid-column-gap: 1rem;
-}
-/* End of Search Fields */
-
 /* START OF TESTING NEW CARD */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
