@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel='stylesheet' href='../default.css'
+
+		<title>Tags</title>
+	</head>
+	<body>
+		<div class="tags-container">
+	</div>
+
+			<input type="text" class="add-skill" placeholder="Add a skill" />
+
+		<!-- JS -->
+		<script>
+			const tagsContainer = document.querySelector('.tags-container');
+			const skillInput = document.querySelector('.add-skill');
+			const addSkill = document.querySelector('#addSkill');
+			let skills = [];
+			//add skill
+			skillInput.addEventListener('keydown', (e) => {
+				// adding to the array
+				if (e.key === 'Enter') {
+					e.preventDefault();
+					const label = e.target.value;
+
+					skills.push(label);
+					console.log(skills);
+
+					const tagEl = document.createElement('span');
+					console.log(tagEl);
+					tagEl.setAttribute('class', 'tag');
+					const skillEl = document.createElement('span');
+					skillEl.innerHTML = label;
+					const closeIcon = document.createElement('i');
+					closeIcon.setAttribute('class', 'fas fa-times');
+					closeIcon.setAttribute('data-skill', label);
+					tagEl.appendChild(skillEl);
+					tagEl.appendChild(closeIcon);
+
+					tagsContainer.appendChild(tagEl);
+				}
+			});
+
+			//REMOVE SKILL
+			document.addEventListener('click', (e) => {
+				if (e.target.matches('i')) {
+					const label = e.target.getAttribute('data-skill');
+					console.log(label);
+					skills = skills.filter((skill) => skill !== label);
+					// console.log(skills);
+					console.log(e.target);
+					console.log(
+						e.target.parentElement.parentElement.removeChild(
+							e.target.parentElement
+						)
+					);
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -154,7 +154,7 @@ textarea {
 /* styling form container */
 /*styling password_reset_form */
 .card-container{
-    background-color: var(--bg-prim);
+    background-color: var(--bg-color1);
     padding: 20px 20px;
     border-radius: 10px;
     max-width: 1000px;
